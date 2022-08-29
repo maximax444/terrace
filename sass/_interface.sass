@@ -1,0 +1,155 @@
+.container
+ width: 1200px
+ margin: auto
+@media (max-width: 1219px)
+ .container
+  width: 980px
+  margin: auto
+@media (max-width: 991px)
+ .container
+  width: 740px
+  margin: auto
+@media (max-width: 767px)
+ .container
+  width: 550px
+  margin: auto
+@media (max-width: 575px)
+ .container
+  width: 100%
+  padding-left: 4.69vw
+  padding-right: 4.69vw
+  margin: auto
+.fullpage
+ overflow: hidden
+ background-color: #0a3443
+.soc
+ position: fixed
+ top: 393px
+ left: 12px
+ a
+  width: 60px
+  height: 60px
+  background-color: #92a8b4
+  border: 1px solid #92a8b4
+  display: flex
+  justify-content: center
+  align-items: center
+  path
+   fill: #0a3443
+   transition: all 0.3s
+  &:hover
+   background-color: transparent
+   path
+    fill: #fff
+.header
+ position: absolute
+ top: 0
+ left: 0
+ width: 100%
+ padding: 78px 0
+ z-index: 2
+ &__wrap
+  display: flex
+  align-items: center
+  justify-content: space-between
+ &__menu
+  padding: 0
+  margin: 0
+  list-style-type: none
+  padding-left: 83px
+  display: flex
+  align-items: center
+  grid-gap: 25px
+  a
+   text-decoration: none
+   font-size: 17px
+   line-height: 5.65
+   padding: 10px 0
+   letter-spacing: 0.34px
+   color: #fff
+   position: relative
+   &::after
+    content: ""
+    display: block
+    width: 0px
+    height: 1px
+    position: absolute
+    bottom: 0
+    left: 50%
+    transition: all 0.3s
+    background-color: #fff
+   &:hover
+    &::after
+     content: ""
+     width: 100%
+     left: 0
+ &__call
+  width: 275px
+  height: 93px
+  background-color: #0a3443
+  border: 1px solid #0a3443
+  display: flex
+  justify-content: center
+  align-items: center
+  text-decoration: none
+  font-size: 17px
+  letter-spacing: 0.34px
+  color: #dadedb
+  &:hover
+   color: #0a3443
+   background-color: transparent
+.main
+ height: 1000px
+ padding-top: 394px
+ position: relative
+ &__wrap
+  position: relative
+  z-index: 2
+ &__title
+  margin: 0
+  width: 835px
+  font-size: 100px
+  line-height: 1.05
+  letter-spacing: 0.2px
+  color: #fff
+  text-transform: uppercase
+  font-weight: 400
+ &__subtitle
+  margin: 0
+  font-size: 17px
+  line-height: 2.53
+  letter-spacing: 0.2px
+  color: #fff
+  margin-bottom: 147px
+ &__phone
+  padding-bottom: 18px
+  display: inline-block
+  position: relative
+  font-size: 17px
+  line-height: 16px
+  text-decoration: none
+  letter-spacing: 0.34px
+  color: #fff
+  &::after
+   content: ""
+   display: block
+   width: 195px
+   height: 1px
+   background-color: #fff
+   position: absolute
+   bottom: 0
+   left: 0
+   transition: all 0.3s
+  &:hover
+   &::after
+    width: 30px
+ &__video
+  position: absolute
+  top: 0
+  right: 0
+  width: 55%
+  height: 100%
+  img
+   width: 100%
+   height: 100%
+   object-fit: cover 
