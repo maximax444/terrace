@@ -1,0 +1,193 @@
+.contacts
+    padding-top: 300px
+    .container
+        position: relative
+    &-call
+        padding-top: 56px
+        &__title
+            font-size: 27px
+            line-height: 1.2
+            font-weight: 400
+            text-transform: uppercase
+            color: #ffffff
+            margin-bottom: 40px
+    &__title
+        margin: 0
+        font-size: 100px
+        line-height: 110px
+        font-weight: 400
+        text-transform: uppercase
+        color: #ffffff
+        margin-bottom: 90px
+        span
+            display: block
+            padding-left: 130px
+    &__tabs
+        display: flex
+        align-items: center
+        grid-gap: 145px
+        margin-bottom: 77px
+        button
+            background-color: transparent
+            border: 0
+            padding: 0
+            font-size: 25px
+            line-height: 70px
+            font-weight: 400
+            color: #ffffff
+            position: relative
+            cursor: pointer
+            &::after
+                position: absolute
+                bottom: 0
+                left: 50%
+                content: ""
+                display: block
+                height: 1px
+                width: 0
+                background-color: #fff
+                transition: all 0.3s
+            &:hover, &.active
+                color: #f58220
+                &::after
+                    background-color: #f58220
+                    width: 100%
+                    left: 0
+    &__mail
+        position: absolute
+        top: -5px
+        right: 0
+        font-size: 17px
+        line-height: 56px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 0.02em
+        color: #ffffff
+        text-decoration: none
+        &::after
+            content: ""
+            display: block
+            width: 270px
+            height: 1px
+            background-color: #ffffff
+            position: absolute
+            bottom: 0
+            right: 0
+            transition: all 0.3s
+        &:hover
+            color: #f58220
+            &::after
+                background-color: #f58220
+                width: 50px
+    &__block
+        display: none
+        &.active
+            display: flex
+            justify-content: space-between
+    &__adres
+        font-size: 17px
+        line-height: 70px
+        font-weight: 400
+        color: #ffffff
+        line-height: 1.2
+    &__map
+        width: 810px
+        height: 360px
+    &__phone
+        display: none
+@media(max-width: 1449px)
+    .contacts__title
+        font-size: 80px
+@media(max-width: 1199px)
+    .contacts
+        &__title
+            font-size: 70px
+        &__map
+            width: 600px
+@media(max-width: 991px)
+    .contacts
+        &__title
+            margin-bottom: 60px
+            line-height: normal
+            span
+                padding-left: 0
+        &__mail
+            position: relative
+            top: 0
+            right: 0
+            text-align: right
+            display: block
+            margin-bottom: 60px
+        &__block
+            &.active
+                display: block
+        &__adres
+            margin-bottom: 40px
+        &__map
+            width: 100%
+@media(max-width: 767px)
+    .contacts
+        padding-top: 140px
+        text-align: right
+        &__title
+            font-size: 50px
+            text-align: left
+            margin-bottom: 0
+        &__phone
+            display: inline-block
+            margin-right: 0
+            margin-left: auto
+            font-size: 17px
+            line-height: 56px
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 0.02em
+            color: #ffffff
+            text-decoration: none
+            position: relative
+            text-align: right
+            margin-bottom: 40px
+            &::after
+                content: ""
+                display: block
+                width: 100%
+                height: 1px
+                background-color: #ffffff
+                position: absolute
+                bottom: 0
+                right: 0
+        &__adres
+            text-align: left
+        &__tabs
+            text-align: left
+            button
+                font-size: 18px
+@media(max-width: 575px)
+    .contacts
+        padding-top: 90px
+        text-align: right
+        &__title
+            font-size: 25px
+            text-align: left
+            margin-bottom: 25px
+        &__phone
+            margin-bottom: 25px
+            font-size: 14px
+        &__mail
+            display: inline-block
+            margin-bottom: 25px
+            font-size: 14px
+            &::after
+                width: 100%
+        &__tabs
+            overflow-x: scroll
+            grid-gap: 40px
+            white-space: nowrap
+            margin-bottom: 25px
+            button
+                font-size: 16px
+        &__map
+            height: 300px
+        &__adres
+            font-size: 14px
+            margin-bottom: 20px
